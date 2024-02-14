@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #111;
+}
+
+.wrap {
+    position: relative;
+}
+
+.wrap:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    background-image: url('https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8NHx8fGVufDB8fHx8fA%3D%3D');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+}
+
+.content {
+    position: relative;
+}
+
+header {
+    text-align: center;
+    color: #ffd816;
+    text-shadow: 0 0 3px #ffd816;
+    text-transform: uppercase;
+    font-size: x-large;
+
+    position: absolute;
+    width: 100%;
+    height: 80px;
+
+    background: rgb(84, 84, 84);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.448) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+#recipes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding-top: 100px;
+}
+
+.recipe {
+    text-align: center;
+    padding: 30px 30px;
+    width: 80%;
+
+    background: rgba(0, 0, 0, 0.462);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.8px);
+    -webkit-backdrop-filter: blur(6.8px);
+    border: 1px solid rgba(0, 0, 0, 0.16);
+}
+
+.recipe .recipe-item {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+}
+
+.recipe img {
+    aspect-ratio: 4/3;
+    width: 40vw;
+    
+}
+
+.recipe a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 48px;
+    border-radius: 32px;
+
+    background: rgba(0, 0, 0, 0.149);
+    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.089);
+    backdrop-filter: blur(7.7px);
+    -webkit-backdrop-filter: blur(7.7px);
+    border: 1px solid transparent;
+}
+
+.recipe a:hover {
+    transition: 0.4s ease-in-out all;
+    color: #111;
+    background: rgba(255, 255, 255, 0.627);
+    
+}
+
+.recipe h3 {
+    color: #ffd816;
+    text-shadow: 0 0 3px #ffd816;
+    text-transform: uppercase;
+    font-size: x-large;
+}
+
+footer {
+    width: calc(100% - 2px);
+    height: 32px;
+    color: #ddd;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    margin-top: 32px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.7px);
+    -webkit-backdrop-filter: blur(7.7px);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
